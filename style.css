@@ -1,0 +1,323 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Section */
+
+
+.header {
+    background-image: url(Asset/front.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    z-index: 2;
+    margin-left: 30px;
+}
+
+nav button {
+    background: #db0001;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    margin-right: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 10px;
+}
+
+.lang img {
+    margin-left: 40px;
+    width: 15px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 600px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1rem;
+}
+
+.email-signup {
+    display: flex;
+    margin-top: 20px;
+    width: 650px;
+    height: 50px;
+    color: white;
+    margin-left: 70px;
+
+}
+
+.email-signup input {
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    color: white;
+
+}
+
+input::placeholder {
+    color: white;
+}
+
+.email-signup button {
+    padding: 10px;
+    background: #db0001;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 140px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 10%;
+    background: #000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-col {
+    flex: 1;
+    padding: 20px;
+}
+
+.img-col {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-col img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* Footer Section */
+footer {
+    background: #141414;
+    color: #757575;
+    padding: 50px 10%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.image3 {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image3:hover {
+    transform: scale(0.9);
+}
+
+.footer-logo {
+    margin-left: 470px;
+    width: 130px;
+    height: 100px;
+}
+
+
+
+
+
+.signin-form {
+    background-image: url(Asset/front.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-form::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.h2 {
+    text-align: start;
+    margin-left: 75px;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+.form-content {
+    z-index: 10;
+    position: relative;
+    text-align: center;
+
+}
+
+.email-signup-02 input {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(58, 54, 54, 0.507);
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    width: 250px;
+    height: 25px;
+}
+
+.email-signup-02 {
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 450px;
+    height: 550px;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.651);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+
+a:hover {
+    color: #474444a4;
+    text-decoration: underline;
+
+}
+
+span {
+    color: #474444a4;
+}
+
+button {
+    background-color: #db0001;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    width: 290px;
+    height: 45px;
+}
+
+
+.button {
+    background-color: #47444450;
+}
+
+.checkbox2 {
+    margin-right: 100vh;
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
